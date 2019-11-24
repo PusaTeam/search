@@ -39,7 +39,7 @@ document.onreadystatechange = function () {
             results.append(document.createElement('ul'))
 
           }
-          for (let i = 0; i < searchResult.length; i++) {
+          for (let i = 0; i < 5; i++) {
 
             results.firstChild.append(document.createElement('li'))
             results.firstChild.children[i].textContent =(searchResult[i].country_rus?searchResult[i].country_rus:searchResult[i].country_eng) + ' ' + searchResult[i].iata_code + ' '+ (searchResult[i].city_rus?searchResult[i].city_rus :searchResult[i].city_eng) + ' ' + (searchResult[i].name_rus?searchResult[i].name_rus :searchResult[i].name_eng)
