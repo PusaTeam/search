@@ -17,18 +17,13 @@ document.onreadystatechange = function () {
           let options = {
             shouldSort: true,
             tokenize: true,
-            threshold: 0.1,
+            threshold: 0,
             location: 0,
             distance: 500,
             maxPatternLength: 32,
             minMatchCharLength: 2,
             keys: [
               "city_rus",
-              "city_eng",
-              "name_rus",
-              "name_eng",
-              "country_rus",
-              "country_eng",
             ]
           };
           let fuse = new Fuse(list, options); // "list" is the item array
